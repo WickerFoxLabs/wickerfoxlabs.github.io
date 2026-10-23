@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wicker Fox Labs</title>
+<meta name="description" content="Wicker Fox Labs makes cozy, beautiful mobile games for Android and iOS.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fff8f1; --bg2: #ffeedd; --card: #ffffff; --text: #2a1c12; --muted: #7a6656;
+    --fox: #ff7414; --fox-dark: #d95a00; --line: #f2dcc6; --sea: #0f6f9a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17110d; --bg2: #221811; --card: #241b15; --text: #fbefe4; --muted: #c4ab96;
+      --fox: #ff8a33; --fox-dark: #ff9f55; --line: #3a2b20; --sea: #4fb6f0;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17110d; --bg2: #221811; --card: #241b15; --text: #fbefe4; --muted: #c4ab96;
+    --fox: #ff8a33; --fox-dark: #ff9f55; --line: #3a2b20; --sea: #4fb6f0;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 "Nunito", -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--fox-dark); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+  header.hero { background: radial-gradient(ellipse at top, var(--bg2), var(--bg) 70%); text-align: center; padding: 56px 0 40px; }
+  .hero img { width: 150px; height: auto; filter: drop-shadow(0 8px 18px rgba(255, 116, 20, 0.25)); }
+  .hero h1 { font: 700 44px/1.1 "Fredoka", sans-serif; margin: 18px 0 8px; letter-spacing: 0.5px; }
+  .hero h1 span { color: var(--fox); }
+  .hero p { margin: 0 auto; max-width: 560px; color: var(--muted); font-size: 19px; }
+
+  section { padding: 40px 0; }
+  h2 { font: 600 28px/1.2 "Fredoka", sans-serif; margin: 0 0 18px; }
+
+  .game { display: flex; gap: 24px; align-items: center; background: var(--card); border: 1px solid var(--line);
+    border-radius: 24px; padding: 22px; box-shadow: 0 10px 30px rgba(120, 60, 10, 0.08); }
+  .game img { width: 128px; height: 128px; border-radius: 28px; flex: none; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18); }
+  .game h3 { font: 600 26px/1.2 "Fredoka", sans-serif; margin: 0 0 6px; color: var(--sea); }
+  .game p { margin: 0 0 12px; color: var(--muted); }
+  .badge { display: inline-block; background: var(--fox); color: #fff; font-weight: 700; font-size: 14px;
+    border-radius: 99px; padding: 5px 14px; margin-right: 10px; }
+  .links { font-size: 15px; }
+
+  .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .value { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+  .value b { display: block; font: 600 19px "Fredoka", sans-serif; margin-bottom: 4px; }
+  .value span { color: var(--muted); font-size: 15px; }
+
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 15px; text-align: center; }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 36px; }
+    .game { flex-direction: column; text-align: center; }
+    .values { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <img src="assets/wickerfox-logo.png" alt="Wicker Fox Labs logo: a fox head with a lab flask">
+    <h1>Wicker <span>Fox</span> Labs</h1>
+    <p>We make cozy, beautiful mobile games: calm to play, lovely to look at, and full of little surprises.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Our games</h2>
+    <div class="game">
+      <img src="assets/aqua-guardianz-icon.png" alt="Aqua Guardianz app icon: a crowned goldfish">
+      <div>
+        <h3>Aqua Guardianz</h3>
+        <p>A relaxing idle aquarium. Raise hundreds of real fish species, unlock tanks from coral reefs to the deep sea, decorate with living backdrops, and join monthly events like Koi Festival and Shark Week.</p>
+        <span class="badge">Coming soon to Google Play</span>
+        <span class="links"><a href="aqua-guardianz/privacy/">Privacy policy</a></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What we care about</h2>
+    <div class="values">
+      <div class="value"><b>Cozy by design</b><span>Games you can relax with, a few minutes or an hour at a time.</span></div>
+      <div class="value"><b>Made with care</b><span>Hand-tuned art, animation and sound in every detail.</span></div>
+      <div class="value"><b>Respect for players</b><span>No personal data collected, and fair, clearly shown odds.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions, feedback or support: <a href="mailto:anum.pro.it@gmail.com">anum.pro.it@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Wicker Fox Labs</div>
+</footer>
+</body>
+</html>
